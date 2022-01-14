@@ -25,7 +25,9 @@
 .customEffect:hover{
   transform: scale(1.1);
 } */
-
+a{
+  text-decoration: none;
+}
 .customLink{
   text-decoration: none;
 }
@@ -37,6 +39,14 @@
   position: relative;
   left: 0;
   bottom: 0;
+}
+
+#bottom-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
 }
 
 .wrapper {
@@ -116,4 +126,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (max-width: 576px) {
+.p-text-center{
+  text-align: left !important;
+}
 }
